@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Doctor Dashboard</title>
+
+    <link rel="stylesheet" href="doctor-dashboard.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="header-left">
+
+        <img src="img/vedya.png" alt="VEDYA">
+
+        <div>
+
+            <h1>Doctor Dashboard</h1>
+
+            <p id="doctorWelcome">
+                Welcome Doctor 👋
+            </p>
+
+        </div>
+
+    </div>
+
+    <button class="logout-btn"
+            onclick="logout()">
+        Logout
+    </button>
+
+</header>
+
+
+<section class="dashboard-summary">
+
+	<div class="profile-card">
+
+	    <img src="img/doctor-avatar.png" alt="Doctor">
+
+	    <h2 id="doctorName">
+	        Doctor
+	    </h2>
+
+	    <p>
+	        Caring for patients with dedication.
+	    </p>
+
+	    <a href="doctor-profile.html"
+	       class="profile-btn">
+	        View Profile
+	    </a>
+
+	</div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <h3>Today's Appointments</h3>
+
+            <span id="todayAppointmentCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Total Appointments</h3>
+
+            <span id="appointmentCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Patients</h3>
+
+            <span id="patientCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Medical Records</h3>
+
+            <span id="recordCount">0</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-calendar-day"></i>
+
+</div>
+
+<h3>Today's Appointments</h3>
+
+<p>See appointments scheduled for today.</p>
+
+<a href="today-appointments.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+</div>
+
+<h3>My Appointments</h3>
+
+<p>View all your appointments.</p>
+
+<a href="doctor-appointments.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-users"></i>
+
+</div>
+
+<h3>Patient History</h3>
+
+<p>View complete patient history.</p>
+
+<a href="patient-history.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-file-medical"></i>
+
+</div>
+
+<h3>Medical Reports</h3>
+
+<p>Manage medical records.</p>
+
+<a href="medical-record.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-capsules"></i>
+
+</div>
+
+<h3>Prescriptions</h3>
+
+<p>Create and view prescriptions.</p>
+
+<a href="prescription.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+<h3>My Schedule</h3>
+
+<p>Check your availability.</p>
+
+<a href="doctor-schedule.html">View</a>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+<h3>Change Password</h3>
+
+<p>Update your account password.</p>
+
+<a href="change-password.html">Open</a>
+
+</div>
+
+</div>
+
+
+
+<section class="activity-section">
+
+<div class="activity-header">
+
+<div>
+
+<h2>Recent Appointments</h2>
+
+<p>Your latest consultations.</p>
+
+</div>
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+</div>
+
+<div id="doctorAppointments"
+class="activity-list">
+
+Loading...
+
+</div>
+
+</section>
+
+<script src="doctor-dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Management | VEDYA</title>
+
+    <link rel="stylesheet"
+          href="doctor.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="dashboard-header">
+
+    <div class="header-left">
+
+        <img src="img/vedya.png">
+
+        <div>
+
+            <h1>Doctor Management</h1>
+
+            <p>
+                Manage Doctor Information Efficiently
+            </p>
+
+        </div>
+
+    </div>
+
+    <a href="admin.html"
+       class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Dashboard
+
+    </a>
+
+</header>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <div>
+
+            <h3>Total Doctors</h3>
+
+            <span id="doctorCount">
+                0
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORM ================= -->
+
+<section class="doctor-form-section">
+
+    <div class="form-card">
+
+        <h2>
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            Add / Update Doctor
+
+        </h2>
+
+        <input
+        type="hidden"
+        id="doctorId">
+
+        <div class="form-grid">
+
+            <div>
+
+                <label>
+
+                    Doctor Name
+
+                </label>
+
+                <input
+                type="text"
+                id="doctorName"
+                placeholder="Enter doctor name">
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Specialization
+
+                </label>
+
+                <input
+                type="text"
+                id="specialization"
+                placeholder="Enter specialization">
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Experience (Years)
+
+                </label>
+
+                <input
+                type="number"
+                id="experienceYears"
+                placeholder="Years">
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Consultation Fee
+
+                </label>
+
+                <input
+                type="number"
+                id="consultationFee"
+                placeholder="Fee">
+
+            </div>
+
+        </div>
+
+        <button
+        class="save-btn"
+        onclick="saveDoctor()">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            Save Doctor
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <input
+
+    type="text"
+
+    id="searchDoctor"
+
+    placeholder="🔍 Search Doctor"
+
+    onkeyup="searchDoctor()">
+
+</section>
+
+<!-- ================= TABLE ================= -->
+
+<section class="table-section">
+
+    <div class="table-card">
+
+        <h2>
+
+            <i class="fa-solid fa-list"></i>
+
+            Doctor List
+
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Specialization</th>
+
+                    <th>Experience</th>
+
+                    <th>Fee</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="doctorTable">
+
+                <tr>
+
+                    <td colspan="6">
+
+                        Loading Doctors...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script src="doctor.js"></script>
+
+</body>
+
+</html>

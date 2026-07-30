@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Profile</title>
+    <link rel="stylesheet" href="patient-profile.css">
+	<link rel="icon" type="image/png" href="img/vedya.png">
+</head>
+<body>
+
+<div class="profile-card">
+
+    <h2>👤 Patient Profile</h2>
+
+    <label>Name</label>
+    <input type="text" id="patientName" readonly>
+
+    <label>Age</label>
+    <input type="number" id="age">
+
+    <label>Gender</label>
+    <input type="text" id="gender">
+
+    <label>Phone</label>
+    <input type="text" id="phone">
+
+    <label>Address</label>
+    <textarea id="address"></textarea>
+
+    <label>Blood Group</label>
+    <input type="text" id="bloodGroup">
+
+    <br><br>
+
+    <button onclick="updateProfile()">
+        Save Changes
+    </button>
+
+</div>
+
+<script src="patient-profile.js"></script>
+
+</body>
+</html>

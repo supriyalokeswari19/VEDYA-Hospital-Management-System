@@ -1,0 +1,427 @@
+:root{
+
+    --primary:#0A2A66;
+    --secondary:#11B5D8;
+    --accent:#7AC943;
+    --background:#F5FCFE;
+    --white:#FFFFFF;
+    --text:#333;
+    --shadow:0 8px 20px rgba(10,42,102,.08);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+    background:var(--background);
+    padding:30px;
+
+}
+
+/* ================= HEADER ================= */
+
+.dashboard-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:22px 35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    margin-bottom:30px;
+
+}
+
+.header-left{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+.header-left img{
+
+    width:75px;
+    height:75px;
+
+}
+
+.header-left h1{
+
+    color:var(--primary);
+    font-size:30px;
+
+}
+
+.header-left p{
+
+    color:#666;
+    margin-top:6px;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ================= STATISTICS ================= */
+
+.stats-section{
+
+    margin-bottom:30px;
+
+}
+
+.stat-card{
+
+    width:270px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    box-shadow:var(--shadow);
+
+}
+
+.stat-card i{
+
+    font-size:40px;
+    color:var(--secondary);
+
+}
+
+.stat-card h3{
+
+    color:#555;
+    margin-bottom:6px;
+    font-size:17px;
+
+}
+
+.stat-card span{
+
+    color:var(--primary);
+    font-size:32px;
+    font-weight:bold;
+
+}
+
+/* ================= FORM ================= */
+
+.form-card{
+
+    background:white;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:35px;
+    margin-bottom:35px;
+
+}
+
+.form-card h2{
+
+    color:var(--primary);
+    margin-bottom:30px;
+
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+
+}
+
+.form-grid label{
+
+    display:block;
+    margin-bottom:8px;
+    color:#555;
+    font-weight:600;
+
+}
+
+.form-grid input{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #DCE5EF;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+
+}
+
+.form-grid input:focus{
+
+    border-color:var(--secondary);
+
+}	/* ================= SAVE BUTTON ================= */
+
+	.save-btn{
+
+	    margin-top:30px;
+	    background:var(--secondary);
+	    color:white;
+	    border:none;
+	    padding:15px 35px;
+	    border-radius:12px;
+	    font-size:16px;
+	    font-weight:600;
+	    cursor:pointer;
+	    transition:.3s;
+
+	}
+
+	.save-btn:hover{
+
+	    background:var(--primary);
+
+	}
+
+	/* ================= SEARCH ================= */
+
+	.search-section{
+
+	    margin-bottom:30px;
+
+	}
+
+	#searchDoctor{
+
+	    width:420px;
+	    max-width:100%;
+	    padding:15px 20px;
+	    border:none;
+	    outline:none;
+	    border-radius:50px;
+	    background:white;
+	    font-size:16px;
+	    box-shadow:var(--shadow);
+
+	}
+
+	/* ================= TABLE ================= */
+
+	.table-card{
+
+	    background:white;
+	    border-radius:20px;
+	    padding:30px;
+	    box-shadow:var(--shadow);
+
+	}
+
+	.table-card h2{
+
+	    color:var(--primary);
+	    margin-bottom:25px;
+
+	}
+
+	table{
+
+	    width:100%;
+	    border-collapse:collapse;
+
+	}
+
+	thead{
+
+	    background:var(--primary);
+	    color:white;
+
+	}
+
+	th{
+
+	    padding:16px;
+	    font-size:15px;
+
+	}
+
+	td{
+
+	    padding:15px;
+	    text-align:center;
+	    border-bottom:1px solid #EAEAEA;
+
+	}
+
+	tbody tr:nth-child(even){
+
+	    background:#F8FCFF;
+
+	}
+
+	tbody tr:hover{
+
+	    background:#EEF9FC;
+
+	}
+
+	/* ================= ACTION BUTTONS ================= */
+
+	.edit-btn{
+
+	    background:var(--secondary);
+	    color:white;
+	    border:none;
+	    padding:9px 16px;
+	    border-radius:8px;
+	    cursor:pointer;
+	    margin-right:8px;
+	    transition:.3s;
+
+	}
+
+	.edit-btn:hover{
+
+	    background:var(--primary);
+
+	}
+
+	.delete-btn{
+
+	    background:#F44336;
+	    color:white;
+	    border:none;
+	    padding:9px 16px;
+	    border-radius:8px;
+	    cursor:pointer;
+	    transition:.3s;
+
+	}
+
+	.delete-btn:hover{
+
+	    background:#C62828;
+
+	}
+
+	/* ================= LOADING ================= */
+
+	.loading{
+
+	    text-align:center;
+	    color:#777;
+	    padding:25px;
+
+	}
+
+	/* ================= RESPONSIVE ================= */
+
+	@media(max-width:900px){
+
+	.form-grid{
+
+	grid-template-columns:1fr;
+
+	}
+
+	.dashboard-header{
+
+	flex-direction:column;
+	gap:20px;
+	text-align:center;
+
+	}
+
+	.header-left{
+
+	flex-direction:column;
+
+	}
+
+	.stat-card{
+
+	width:100%;
+
+	}
+
+	}
+
+	@media(max-width:700px){
+
+	table{
+
+	display:block;
+	overflow-x:auto;
+
+	}
+
+	.table-card{
+
+	padding:20px;
+
+	}
+
+	#searchDoctor{
+
+	width:100%;
+
+	}
+
+	.save-btn{
+
+	width:100%;
+
+	}
+
+	}
+
+	@media(max-width:500px){
+
+	body{
+
+	padding:15px;
+
+	}
+
+	.header-left h1{
+
+	font-size:24px;
+
+	}
+
+	.form-card{
+
+	padding:20px;
+
+	}
+
+	.table-card{
+
+	padding:15px;
+
+	}
+
+	}

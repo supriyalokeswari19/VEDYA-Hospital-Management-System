@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VEDYA Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="icon" type="image/png" href="img/vedya.png">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="dashboard-header">
+
+    <div class="header-left">
+
+        <img src="img/vedya.png" alt="VEDYA Logo">
+
+        <div>
+
+            <h1>VEDYA</h1>
+
+            <p id="adminWelcome">
+                Welcome Administrator 👋
+            </p>
+
+        </div>
+
+    </div>
+
+    <button class="logout-btn" onclick="logout()">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</header>
+
+<!-- ================= PROFILE + STATS ================= -->
+
+<section class="dashboard-summary">
+
+    <!-- Profile -->
+
+    <div class="profile-card">
+
+        <img src="img/admin-avatar.png" alt="Administrator">
+
+        <h2 id="adminName">
+            Administrator
+        </h2>
+
+        <p>Vedya Hospital Management System</p>
+
+		<p class="admin-description">
+		    Monitor hospital operations, manage users, oversee appointments, and ensure smooth system administration.
+		</p>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <h3>Doctors</h3>
+
+            <span id="doctorCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Patients</h3>
+
+            <span id="patientCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <h3>Appointments</h3>
+
+            <span id="appointmentCount">0</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            <h3>Bills</h3>
+
+            <span id="billCount">0</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="globalSearch"
+        placeholder="🔍 Search Doctors, Patients..."
+        onkeyup="globalSearch()">
+
+    <div id="searchResults"></div>
+
+</section>
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="cards">
+
+        <a href="doctor.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-user-doctor"></i>
+
+            </div>
+
+            <h3>Doctors</h3>
+
+            <p>Manage doctor accounts.</p>
+
+            <span>Open</span>
+
+        </a>
+
+        <a href="patient.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+            <h3>Patients</h3>
+
+            <p>Manage patient records.</p>
+
+            <span>Open</span>
+
+        </a>
+
+        <a href="appointment.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+            <h3>Appointments</h3>
+
+            <p>Manage appointments.</p>
+
+            <span>Open</span>
+
+        </a>
+
+        <a href="bill.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            </div>
+
+            <h3>Billing</h3>
+
+            <p>Manage bills & payments.</p>
+
+            <span>Open</span>
+
+        </a>
+
+        
+
+        
+
+        <a href="reports.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+            </div>
+
+            <h3>Reports</h3>
+
+            <p>Generate reports.</p>
+
+            <span>Open</span>
+
+        </a>
+
+       
+
+        <a href="pending-approvals.html" class="card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-user-clock"></i>
+
+            </div>
+
+            <h3>Pending Approvals</h3>
+
+            <p>Approve newly  users.</p>
+
+            <span>Open</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= RECENT APPOINTMENTS ================= -->
+
+<section class="activity-section">
+
+    <div class="activity-card">
+
+        <h2>
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            Recent Appointments
+
+        </h2>
+
+        <div id="recentAppointments">
+
+            <div class="loading">
+
+                Loading Dashboard...
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

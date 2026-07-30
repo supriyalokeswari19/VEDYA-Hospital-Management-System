@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Appointment Management | VEDYA</title>
+
+<link rel="stylesheet"
+href="appointment.css">
+
+<link rel="icon"
+href="img/vedya.png">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- Header -->
+
+<header class="page-header">
+
+<div class="logo-section">
+
+<img src="img/vedya.png">
+
+<div>
+
+<h1>Appointment Management</h1>
+
+<p>
+Manage Patient Appointments Efficiently
+</p>
+
+</div>
+
+</div>
+
+<a href="admin.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</a>
+
+</header>
+
+<!-- Form -->
+
+<section class="form-card">
+
+<h2>
+
+<i class="fa-solid fa-calendar-plus"></i>
+
+Book / Update Appointment
+
+</h2>
+
+<input
+type="hidden"
+id="appointmentId">
+
+<div class="form-grid">
+
+<div class="input-group">
+
+<label>Patient</label>
+
+<select id="patientId"></select>
+
+</div>
+
+<div class="input-group">
+
+<label>Doctor</label>
+
+<select id="doctorId"></select>
+
+</div>
+
+<div class="input-group">
+
+<label>Appointment Date</label>
+
+<input
+type="date"
+id="appointmentDate">
+
+</div>
+
+<div class="input-group">
+
+<label>Appointment Time</label>
+
+<input
+type="time"
+id="appointmentTime">
+
+</div>
+
+<div class="input-group full-width">
+
+<label>Status</label>
+
+<select id="status">
+
+<option value="Scheduled">
+Scheduled
+</option>
+
+<option value="Completed">
+Completed
+</option>
+
+<option value="Cancelled">
+Cancelled
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button
+class="save-btn"
+onclick="saveAppointment()">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Appointment
+
+</button>
+
+</section>
+
+<!-- Table -->
+
+<section class="table-card">
+
+<div class="table-header">
+
+<h2>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Appointment List
+
+</h2>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient</th>
+
+<th>Doctor</th>
+
+<th>Date</th>
+
+<th>Time</th>
+
+<th>Status</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="appointmentTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="appointment.js"></script>
+
+</body>
+
+</html>

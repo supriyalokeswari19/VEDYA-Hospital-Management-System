@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VEDYA Reports</title>
+
+    <link rel="stylesheet" href="reports.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="dashboard-header">
+
+    <div class="header-left">
+
+        <img src="img/vedya.png">
+
+        <div>
+
+            <h1>VEDYA Reports</h1>
+
+            <p>Hospital Analytics & Reports Dashboard</p>
+
+        </div>
+
+    </div>
+
+    <button onclick="window.print()" class="print-btn">
+
+        <i class="fa-solid fa-print"></i>
+
+        Print Report
+
+    </button>
+
+</header>
+
+<!-- ================= SUMMARY CARDS ================= -->
+
+<section class="summary-section">
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h3>Total Doctors</h3>
+
+        <h2 id="doctorCount">0</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h3>Total Patients</h3>
+
+        <h2 id="patientCount">0</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <h3>Appointments</h3>
+
+        <h2 id="appointmentCount">0</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+        <h3>Total Revenue</h3>
+
+        <h2 id="totalRevenue">₹0</h2>
+
+    </div>
+
+</section>
+
+<!-- ================= FILTER ================= -->
+
+<section class="filter-section">
+
+    <h2>
+
+        <i class="fa-solid fa-filter"></i>
+
+        Report Filters
+
+    </h2>
+
+    <div class="filter-grid">
+
+        <input type="date" id="fromDate">
+
+        <input type="date" id="toDate">
+
+        <button onclick="generateReport()">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            Generate Report
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= DOCTOR REPORT ================= -->
+
+<section class="report-section">
+
+    <h2>
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        Doctor Appointment Report
+
+    </h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Doctor ID</th>
+
+                <th>Total Appointments</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="appointmentReport">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= BILLING REPORT ================= -->
+
+<section class="report-section">
+
+    <h2>
+
+        <i class="fa-solid fa-file-invoice-dollar"></i>
+
+        Revenue Report
+
+    </h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Doctor ID</th>
+
+                <th>Total Revenue</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="revenueReport">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= HOSPITAL SUMMARY ================= -->
+
+<section class="hospital-summary">
+
+    <h2>
+
+        <i class="fa-solid fa-hospital"></i>
+
+        Hospital Summary
+
+    </h2>
+
+    <div class="summary-grid">
+
+        <div>
+
+            <span>Total Doctors</span>
+
+            <strong id="summaryDoctors">0</strong>
+
+        </div>
+
+        <div>
+
+            <span>Total Patients</span>
+
+            <strong id="summaryPatients">0</strong>
+
+        </div>
+
+        <div>
+
+            <span>Total Appointments</span>
+
+            <strong id="summaryAppointments">0</strong>
+
+        </div>
+
+        <div>
+
+            <span>Total Revenue</span>
+
+            <strong id="summaryRevenue">₹0</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EXPORT BUTTONS ================= -->
+
+<section class="export-section">
+
+    <button onclick="window.print()">
+
+        <i class="fa-solid fa-print"></i>
+
+        Print
+
+    </button>
+
+    <button onclick="exportPDF()">
+
+        <i class="fa-solid fa-file-pdf"></i>
+
+        Export PDF
+
+    </button>
+
+    <button onclick="exportExcel()">
+
+        <i class="fa-solid fa-file-excel"></i>
+
+        Export Excel
+
+    </button>
+
+</section>
+
+<script src="reports.js"></script>
+
+</body>
+
+</html>

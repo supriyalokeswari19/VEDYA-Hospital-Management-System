@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Medical Records - VEDYA</title>
+
+<link rel="stylesheet"
+href="medical-record.css">
+
+<link rel="icon"
+type="image/png"
+href="img/vedya.png">
+
+</head>
+
+<body>
+
+	<nav>
+
+	    <div class="logo">
+
+	        <img src="img/vedya.png">
+
+	        <h2>VEDYA</h2>
+
+	    </div>
+
+	    <a href="doctor-dashboard.html">
+
+	        ← Dashboard
+
+	    </a>
+
+	</nav>
+
+	<section class="records">
+
+	<div class="section-title">
+
+	<h5>DOCTOR PORTAL</h5>
+
+	<h2>Patient Medical Records</h2>
+
+	<p>
+
+	Create, update and manage patient medical records.
+
+	</p>
+
+	</div>
+<input type="hidden" id="recordId">
+
+<div class="form-container">
+
+    <input type="hidden" id="recordId">
+
+    <input
+    type="number"
+    id="patientId"
+    placeholder="Patient ID">
+
+    <input
+    type="number"
+    id="doctorId"
+    placeholder="Doctor ID">
+
+    <input
+    type="text"
+    id="diagnosis"
+    placeholder="Diagnosis">
+
+    <input
+    type="text"
+    id="prescription"
+    placeholder="Prescription">
+
+    <input
+    type="date"
+    id="visitDate">
+
+    <button onclick="saveMedicalRecord()">
+    Save Record
+    </button>
+
+</div>
+
+<h2 class="table-title">
+Medical Records
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Record ID</th>
+<th>Patient ID</th>
+<th>Doctor ID</th>
+<th>Diagnosis</th>
+<th>Prescription</th>
+<th>Visit Date</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="medicalRecordTable">
+
+</tbody>
+
+</table>
+
+<script src="medical-record.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+body{
+
+    margin:0;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:#F5FCFE;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:#0A2A66;
+
+    color:white;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+}
+
+.logo h2{
+
+    color:white;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.appointments{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.section-title h5{
+
+    color:#11B5D8;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    color:#0A2A66;
+
+    font-size:36px;
+
+    margin:0;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    margin-top:15px;
+
+}
+
+.appointment-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(17,181,216,.08);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.appointment-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.appointment-left{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+.appointment-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    background:#E8F7FC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.appointment-icon i{
+
+    color:#11B5D8;
+
+    font-size:28px;
+
+}
+
+.appointment-details h3{
+
+    margin:0;
+
+    color:#0A2A66;
+
+}
+
+.appointment-details p{
+
+    margin:8px 0;
+
+    color:#666;
+
+}
+
+.status{
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.completed{
+
+    background:#DFF6E8;
+
+    color:#12804C;
+
+}
+
+.pending{
+
+    background:#FFF3CD;
+
+    color:#856404;
+
+}
+
+.cancelled{
+
+    background:#F8D7DA;
+
+    color:#B02A37;
+
+}

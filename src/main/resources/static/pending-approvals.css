@@ -1,0 +1,52 @@
+body{
+
+    font-family: Arial;
+    padding:20px;
+}
+
+h2{
+
+    margin-bottom:20px;
+	color: #0A2A66;
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+
+    background:#2d89ef;
+    color:white;
+}
+
+button{
+
+    padding:8px 15px;
+    margin:3px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:first-child{
+
+    background:green;
+    color:white;
+}
+
+button:last-child{
+
+    background:red;
+    color:white;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Analytics Dashboard</title>
+
+<link rel="stylesheet"
+href="analytics.css">
+<link rel="icon"
+type="image/png"
+href="img/vedya.png">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="logo-section">
+
+<img src="img/vedya.png">
+
+<div>
+
+<h1>📊 Analytics Dashboard</h1>
+
+<p>Hospital Statistics & Insights</p>
+
+</div>
+
+</div>
+
+<div class="stats-container">
+
+<div class="stat-card">
+
+<h2 id="doctorCount">0</h2>
+
+<p>Doctors</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="patientCount">0</h2>
+
+<p>Patients</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="appointmentCount">0</h2>
+
+<p>Appointments</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="billCount">0</h2>
+
+<p>Bills</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="totalRevenue">₹0</h2>
+
+<p>Total Revenue</p>
+
+</div>
+
+</div>
+
+<div class="chart-card">
+
+    <h2>💰 Doctor-wise Revenue</h2>
+
+    <div style="width:350px;height:350px;margin:auto;">
+
+        <canvas id="revenueChart"></canvas>
+
+    </div>
+
+</div>S
+
+<div class="chart-card">
+
+<h2>💰 Doctor-wise Revenue</h2>
+
+<canvas id="revenueChart"></canvas>
+
+</div>
+
+<script src="analytics.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Details | VEDYA</title>
+
+    <link rel="stylesheet"
+          href="doctor-details.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+		  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        <img src="img/vedya.png">
+
+        <h2>VEDYA</h2>
+
+    </div>
+
+    <a href="patient-doctors.html" class="back-btn">
+
+        ← Back
+
+    </a>
+
+</nav>
+
+<section class="doctor-details">
+
+    <div class="doctor-card">
+
+        
+
+        <div class="doctor-info">
+
+            <h1 id="doctorName">
+
+                Loading...
+
+            </h1>
+
+            <h3 id="qualification"></h3>
+
+            <h4 id="specialization"></h4>
+
+            <p id="experience"></p>
+
+           
+
+            <h2 id="consultationFee"></h2>
+
+            <div class="about">
+
+                <h3>About Doctor</h3>
+
+                <p>
+
+                    Dedicated healthcare professional committed
+                    to providing compassionate, patient-centered
+                    medical care using modern treatment methods.
+
+                </p>
+
+            </div>
+               <br>
+			<button onclick="bookAppointment()" class="button">
+			    Book Appointment
+			</button>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="popupOverlay" class="popup-overlay">
+
+    <div class="popup">
+
+        <div id="popupIcon" class="popup-icon">✔</div>
+
+        <h2 id="popupTitle">Success</h2>
+
+        <p id="popupMessage"></p>
+
+        <button onclick="closePopup()">OK</button>
+
+    </div>
+
+</div>
+
+<script src="popup.js"></script>
+
+
+<script src="doctor-details.js"></script>
+
+</body>
+
+</html>

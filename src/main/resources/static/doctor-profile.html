@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="doctor-profile.css">
+	<link rel="icon" type="image/png" href="img/vedya.png">
+</head>
+<body>
+
+<div class="profile-card">
+
+    <h2>👨🏻‍⚕️ Doctor Profile</h2>
+
+    <div class="profile-item">
+        <label>Name</label>
+        <input type="text" id="doctorName" readonly>
+    </div>
+
+    <div class="profile-item">
+        <label>Specialization</label>
+        <input type="text" id="specialization">
+    </div>
+
+    <div class="profile-item">
+        <label>Experience</label>
+        <input type="number" id="experienceYears">
+    </div>
+
+    <div class="profile-item">
+        <label>Consultation Fee</label>
+        <input type="number" id="consultationFee">
+    </div>
+
+    <button onclick="updateProfile()">
+        Save Changes
+    </button>
+
+</div>
+
+<script src="doctor-profile.js"></script>
+
+</body>
+</html>

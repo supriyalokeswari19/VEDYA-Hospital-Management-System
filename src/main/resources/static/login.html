@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>VEDYA Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+		  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <img src="img/vedya.png"
+             class="logo">
+
+        <h2>VEDYA</h2>
+
+        <p class="subtitle">
+            Smart Healthcare Management System
+        </p>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password">
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+	<div id="popupOverlay" style="display:none;">
+	    <div class="popup">
+	        <div id="popupIcon"></div>
+	        <h2 id="popupTitle"></h2>
+	        <p id="popupMessage"></p>
+	        <button onclick="closePopup()">OK</button>
+	    </div>
+	</div>
+    <script src="login.js"></script>
+	<script src="popup.js"></script>
+</body>
+</html>

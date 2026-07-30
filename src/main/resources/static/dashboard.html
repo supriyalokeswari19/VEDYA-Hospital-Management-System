@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>VEDYA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="img/vedya.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="img/vedya.png"
+                 alt="VEDYA Logo">
+
+            <div>
+
+                <h2>VEDYA</h2>
+
+                <p>Smart Healthcare Management System</p>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Welcome -->
+
+    <section class="welcome-section">
+
+        <h1> Welcome to VEDYA</h1>
+
+        <p>
+            Simplifying Healthcare Management with
+            Smart Digital Solutions
+        </p>
+
+    </section>
+
+    <!-- Dashboard -->
+
+    <section>
+
+        <h2 class="report-title">
+            Dashboard Overview
+        </h2>
+
+        <div class="card-container">
+
+            <div class="card">
+
+                <h3>Total Doctors</h3>
+
+                <p id="doctorCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Patients</h3>
+
+                <p id="patientCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Appointments</h3>
+
+                <p id="appointmentCount">0</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Reports -->
+
+    <section>
+
+        <h2 class="report-title">
+            Appointment Report
+        </h2>
+
+        <div class="search-box">
+
+            <select
+                id="statusFilter"
+                onchange="filterTable()">
+
+                <option value="ALL">
+                    All Status
+                </option>
+
+                <option value="completed">
+                    Completed
+                </option>
+
+                <option value="scheduled">
+                    Scheduled
+                </option>
+
+            </select>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Appointment ID</th>
+
+                    <th>Patient ID</th>
+
+                    <th>Doctor ID</th>
+
+                    <th>Specialization</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="reportTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Billing Management | VEDYA</title>
+
+<link rel="stylesheet"
+href="bill.css">
+
+<link rel="icon"
+href="img/vedya.png">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- Header -->
+
+<header class="page-header">
+
+<div class="logo-section">
+
+<img src="img/vedya.png">
+
+<div>
+
+<h1>Billing Management</h1>
+
+<p>
+
+Manage Patient Bills Efficiently
+
+</p>
+
+</div>
+
+</div>
+
+<a href="admin.html"
+class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</a>
+
+</header>
+
+<!-- Form -->
+
+<section class="form-card">
+
+<h2>
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+Create / Update Bill
+
+</h2>
+
+<input
+type="hidden"
+id="billId">
+
+<div class="form-grid">
+
+<div class="input-group">
+
+<label>Patient ID</label>
+
+<input
+type="number"
+id="patientId">
+
+</div>
+
+<div class="input-group">
+
+<label>Amount</label>
+
+<input
+type="number"
+id="amount">
+
+</div>
+
+<div class="input-group">
+
+<label>Bill Date</label>
+
+<input
+type="date"
+id="billDate">
+
+</div>
+
+<div class="input-group">
+
+<label>Payment Status</label>
+
+<select id="paymentStatus">
+
+<option value="Pending">
+
+Pending
+
+</option>
+
+<option value="Paid">
+
+Paid
+
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button
+class="save-btn"
+onclick="saveBill()">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Bill
+
+</button>
+
+</section>
+
+<!-- Table -->
+
+<section class="table-card">
+
+<div class="table-header">
+
+<h2>
+
+<i class="fa-solid fa-file-invoice"></i>
+
+Billing Records
+
+</h2>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Bill ID</th>
+
+<th>Patient ID</th>
+
+<th>Amount</th>
+
+<th>Bill Date</th>
+
+<th>Status</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="billTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="bill.js"></script>
+
+</body>
+
+</html>

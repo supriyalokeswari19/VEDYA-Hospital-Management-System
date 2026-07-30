@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Patient Dashboard - VEDYA</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+href="patient-dashboard.css">
+
+<link rel="icon"
+type="image/png"
+href="img/vedya.png">
+
+</head>
+
+<body>
+
+	<header class="dashboard-header">
+
+	    <div class="header-left">
+
+	        <img src="img/vedya.png" alt="VEDYA">
+
+	        <div>
+
+	            <h1>Patient Dashboard</h1>
+
+	            <p id="patientWelcome">
+	                Welcome back! Manage your healthcare in one place.
+	            </p>
+
+	        </div>
+
+	    </div>
+
+	    <button class="logout-btn"
+	            onclick="logout()">
+
+	        Logout
+
+	    </button>
+
+	</header>
+	<section class="dashboard-summary">
+
+		<div class="profile-card">
+
+		    <img src="img/patient-avatar.png">
+
+		    <h2 id="patientName">Patient</h2>
+
+		    <p>Your health journey starts here.</p>
+
+		    <a href="patient-profile.html" class="profile-btn">
+		        View Profile
+		    </a>
+
+		</div>
+
+	    <div class="stats-grid">
+
+	        <div class="stat-card">
+
+	            <h3>
+	                Appointments
+	            </h3>
+
+	            <span id="appointmentCount">
+	                0
+	            </span>
+
+	        </div>
+
+	        <div class="stat-card">
+
+	            <h3>
+	                Medical Records
+	            </h3>
+
+	            <span id="recordCount">
+	                0
+	            </span>
+
+	        </div>
+
+	        <div class="stat-card">
+
+	            <h3>
+	                Prescriptions
+	            </h3>
+
+	            <span id="prescriptionCount">
+	                0
+	            </span>
+
+	        </div>
+
+	        <div class="stat-card">
+
+	            <h3>
+	                Bills
+	            </h3>
+
+	            <span id="billCount">
+	                0
+	            </span>
+
+	        </div>
+
+	    </div>
+
+	</section>
+	
+<div class="cards">
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-plus"></i>
+
+
+<h3>Book Now</h3>
+<p>
+Schedule appointments with your preferred doctor.
+</p>
+<a href="patient-doctors.html">
+    Book
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-clipboard-list"></i>
+
+<h3>My Appointments</h3>
+<p>
+View upcoming and previous appointments.
+</p><br>
+<a href="patient-appointments.html">
+View
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-file-medical"></i>
+
+<h3>Medical Reports</h3>
+<p>
+Access reports and health history anytime.
+</p><br>
+<a href="patient-medical-records.html">
+    View
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-capsules"></i>
+
+<h3>Prescriptions</h3>
+<p>
+View medicines prescribed by your doctor.
+</p><br>
+<a href="patient-prescriptions.html">
+View
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>My Bills</h3>
+<p>
+Track invoices and payment history.
+</p><br>
+<a href="patient-bills.html">
+View
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>Change Password</h3>
+<p>
+Update your password to keep your account secure.
+</p>
+<a href="change-password.html">
+Open
+</a>
+
+</div>
+
+</div>
+
+<section class="activity-section">
+
+    <div class="activity-header">
+
+        <div>
+
+            <h2>Recent Activity</h2>
+
+            <p>
+                Stay updated with your latest healthcare activities.
+            </p>
+
+        </div>
+
+        <i class="fa-solid fa-clock-rotate-left"></i>
+
+    </div>
+
+    <div id="patientActivity"
+         class="activity-list">
+
+        Loading...
+
+    </div>
+
+</section>
+
+
+
+<script src="patient-dashboard.js"></script>
+
+</body>
+
+</html>

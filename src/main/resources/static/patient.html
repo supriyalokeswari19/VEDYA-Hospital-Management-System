@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Management | VEDYA</title>
+
+    <link rel="stylesheet"
+          href="patient.css">
+
+    <link rel="icon"
+          href="img/vedya.png">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Header -->
+
+    <header class="page-header">
+
+        <div class="logo-section">
+
+            <img src="img/vedya.png">
+
+            <div>
+
+                <h1>Patient Management</h1>
+
+                <p>
+                    Manage Patient Information Efficiently
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="admin.html"
+           class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Dashboard
+
+        </a>
+
+    </header>
+
+    <!-- Search -->
+
+    <div class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchPatient"
+                placeholder="Search Patient..."
+                onkeyup="searchPatient()">
+
+        </div>
+
+    </div>
+
+    <!-- Form Card -->
+
+    <section class="form-card">
+
+        <h2>
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Add / Update Patient
+
+        </h2>
+
+        <input
+            type="hidden"
+            id="patientId">
+
+        <div class="form-grid">
+
+            <div class="input-group">
+
+                <label>Patient Name</label>
+
+                <input
+                    type="text"
+                    id="patientName">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>User ID</label>
+
+                <input
+                    type="number"
+                    id="userId">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    id="age">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Gender</label>
+
+                <input
+                    type="text"
+                    id="gender">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Phone</label>
+
+                <input
+                    type="text"
+                    id="phone">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Blood Group</label>
+
+                <input
+                    type="text"
+                    id="bloodGroup">
+
+            </div>
+
+            <div class="input-group full-width">
+
+                <label>Address</label>
+
+                <input
+                    type="text"
+                    id="address">
+
+            </div>
+
+        </div>
+
+        <button
+            class="save-btn"
+            onclick="savePatient()">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            Save Patient
+
+        </button>
+
+    </section>
+
+    <!-- Table -->
+
+    <section class="table-card">
+
+        <div class="table-header">
+
+            <h2>
+
+                <i class="fa-solid fa-users"></i>
+
+                Patient List
+
+            </h2>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Age</th>
+
+                    <th>Gender</th>
+
+                    <th>Phone</th>
+
+                    <th>Blood Group</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="patientTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="patient.js"></script>
+
+</body>
+</html>

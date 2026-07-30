@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | VEDYA</title>
+
+<link rel="stylesheet"
+href="book-appointment.css">
+
+<link rel="icon"
+type="image/png"
+href="img/vedya.png">
+<link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<img src="img/vedya.png">
+
+<h2>VEDYA</h2>
+
+</div>
+
+<a href="patient-doctors.html" class="back-btn">
+
+← Back
+
+</a>
+
+</nav>
+
+<section class="booking-section">
+
+<div class="booking-card">
+
+<h1>Book Appointment</h1>
+
+<div class="doctor-preview">
+
+
+
+<div>
+
+<h2 id="doctorName">
+
+Loading...
+
+</h2>
+
+<p id="specialization"></p>
+
+<p id="consultationFee"></p>
+
+</div>
+
+</div>
+
+<form id="appointmentForm">
+
+<div class="input-group">
+
+<label>Appointment Date</label>
+
+<input
+type="date"
+id="appointmentDate"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Appointment Time</label>
+
+<input
+type="time"
+id="appointmentTime"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Reason</label>
+
+<textarea
+id="reason"
+rows="4"
+placeholder="Describe your health concern..."
+required>
+</textarea>
+
+</div>
+
+<button
+type="submit">
+
+Book Appointment
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+<!-- Popup -->
+<div id="popupOverlay" class="popup-overlay">
+
+    <div class="popup">
+
+        <div id="popupIcon" class="popup-icon">✔</div>
+
+        <h2 id="popupTitle">Success</h2>
+
+        <p id="popupMessage">
+            Message
+        </p>
+
+        <button onclick="closePopup()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+<script src="book-appointment.js"></script>
+<script src="popup.js"></script>
+</body>
+
+</html>

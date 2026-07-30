@@ -1,0 +1,313 @@
+:root{
+
+    --primary:#0A2A66;
+    --secondary:#11B5D8;
+    --accent:#7AC943;
+    --background:#F5FCFE;
+    --white:#FFFFFF;
+    --text:#333;
+    --shadow:0 8px 20px rgba(10,42,102,.08);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+    background:var(--background);
+
+}
+
+.page{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:30px;
+
+}
+
+/* ================= HEADER ================= */
+
+.page-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+
+}
+
+.logo-section{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.logo-section img{
+
+    width:80px;
+    height:80px;
+
+}
+
+.logo-section h1{
+
+    color:var(--primary);
+    margin-bottom:6px;
+
+}
+
+.logo-section p{
+
+    color:#666;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ================= FORM ================= */
+
+.form-card{
+
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    margin-bottom:35px;
+
+}
+
+.form-card h2{
+
+    color:var(--primary);
+    margin-bottom:25px;
+
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+.input-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    color:#444;
+
+}
+
+.input-group input,
+.input-group select{
+
+    padding:13px;
+    border:1px solid #d6d6d6;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color:var(--secondary);
+
+}
+
+.save-btn{
+
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    background:var(--secondary);
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary);
+
+}
+
+/* ================= TABLE ================= */
+
+.table-card{
+
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+
+}
+
+.table-header{
+
+    margin-bottom:20px;
+
+}
+
+.table-header h2{
+
+    color:var(--primary);
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--primary);
+    color:white;
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+
+}
+
+tr:hover{
+
+    background:#F8FCFF;
+
+}
+
+/* ================= STATUS ================= */
+
+.status{
+
+    color:white;
+    padding:7px 15px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.status.paid{
+
+    background:#28a745;
+
+}
+
+.status.pending{
+
+    background:#ffc107;
+    color:#222;
+
+}
+
+/* ================= BUTTONS ================= */
+
+.edit-btn{
+
+    background:#11B5D8;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#0A2A66;
+
+}
+
+.delete-btn{
+
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#b02a37;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.page-header{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+}

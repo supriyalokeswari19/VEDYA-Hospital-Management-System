@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prescription Management</title>
+
+<link rel="stylesheet" href="prescription.css">
+<link rel="icon" type="image/png" href="img/vedya.png">
+
+</head>
+
+<body>
+
+	<header class="dashboard-header">
+
+	    <div class="header-left">
+
+	        <img src="img/vedya.png" alt="VEDYA Logo">
+
+	        <div>
+
+	            <h1>VEDYA</h1>
+
+	        </div>
+
+	    </div>
+
+	    <a href="doctor-dashboard.html" class="dashboard-btn">
+
+	        ← Dashboard
+
+	    </a>
+
+	</header>
+
+	<section class="records">
+
+	    <div class="section-title">
+
+	        <h5>DOCTOR PORTAL</h5>
+
+	        <h2>Prescription Management</h2>
+
+	        <p>Create, update and manage patient prescriptions.</p>
+
+	    </div>
+
+	    <div class="form-container">
+
+	        <!-- your existing form -->
+
+	    </div>
+
+	</section>
+
+<div class="form-container">
+	<input type="hidden" id="prescriptionId">
+<input type="number"
+id="appointmentId"
+placeholder="Appointment ID">
+
+<input type="text"
+id="medicine"
+placeholder="Medicine">
+
+<input type="text"
+id="dosage"
+placeholder="Dosage">
+
+<input type="text"
+id="instructions"
+placeholder="Instructions">
+
+
+
+<button onclick="savePrescription()">
+Save Prescription
+</button>
+
+</div>
+
+<h2 class="table-title">
+Prescription Records
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Appointment ID</th>
+<th>Medicine</th>
+<th>Dosage</th>
+<th>Instructions</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="prescriptionTable">
+
+</tbody>
+
+</table>
+
+<script src="prescription.js"></script>
+
+</body>
+</html>

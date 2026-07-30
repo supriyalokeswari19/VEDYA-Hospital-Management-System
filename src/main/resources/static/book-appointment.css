@@ -1,0 +1,268 @@
+:root{
+
+    --primary:#0A2A66;
+    --secondary:#11B5D8;
+    --accent:#7AC943;
+    --background:#F4F8FB;
+    --white:#FFFFFF;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:var(--background);
+
+}
+
+/* ---------- Navbar ---------- */
+
+nav{
+
+    height:80px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(90deg,#0A2A66,#11B5D8);
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------- Booking ---------- */
+
+.booking-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:60px 20px;
+
+}
+
+.booking-card{
+
+    width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.booking-card h1{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+/* ---------- Doctor Preview ---------- */
+
+.doctor-preview{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#F8FBFD;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:30px;
+
+}
+
+.doctor-preview img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:4px solid var(--secondary);
+
+}
+
+.doctor-preview h2{
+
+    color:var(--primary);
+
+}
+
+.doctor-preview p{
+
+    margin-top:8px;
+
+    color:#666;
+
+}
+
+/* ---------- Form ---------- */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.input-group input,
+
+.input-group textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.input-group input:focus,
+
+.input-group textarea:focus{
+
+    border:2px solid var(--secondary);
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#0A2A66,#11B5D8);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(17,181,216,.3);
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.booking-card{
+
+    width:95%;
+
+}
+
+.doctor-preview{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}

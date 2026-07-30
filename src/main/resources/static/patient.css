@@ -1,0 +1,345 @@
+:root{
+
+    --primary:#0A2A66;
+    --secondary:#11B5D8;
+    --accent:#7AC943;
+    --background:#F5FCFE;
+    --white:#FFFFFF;
+    --text:#333;
+    --shadow:0 8px 20px rgba(10,42,102,.08);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+    background:var(--background);
+
+}
+
+.page{
+
+    width:90%;
+    max-width:1400px;
+    margin:30px auto;
+
+}
+
+/* ================= HEADER ================= */
+
+.page-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:25px 35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    margin-bottom:30px;
+
+}
+
+.logo-section{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.logo-section img{
+
+    width:80px;
+    height:80px;
+
+}
+
+.logo-section h1{
+
+    color:var(--primary);
+    font-size:32px;
+
+}
+
+.logo-section p{
+
+    color:#666;
+    margin-top:5px;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ================= SEARCH ================= */
+
+.search-section{
+
+    margin-bottom:30px;
+
+}
+
+.search-box{
+
+    background:white;
+    display:flex;
+    align-items:center;
+    padding:14px 20px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+
+}
+
+.search-box i{
+
+    color:#888;
+    margin-right:12px;
+
+}
+
+.search-box input{
+
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:16px;
+
+}
+
+/* ================= FORM ================= */
+
+.form-card{
+
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    margin-bottom:35px;
+
+}
+
+.form-card h2{
+
+    color:var(--primary);
+    margin-bottom:25px;
+
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+.input-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    color:#555;
+
+}
+
+.input-group input{
+
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+
+}
+
+.input-group input:focus{
+
+    border-color:var(--secondary);
+    outline:none;
+
+}
+
+.full-width{
+
+    grid-column:1/3;
+
+}
+
+.save-btn{
+
+    margin-top:30px;
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary);
+
+}
+
+/* ================= TABLE ================= */
+
+.table-card{
+
+    background:white;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+
+}
+
+.table-header{
+
+    padding:25px 30px;
+    border-bottom:1px solid #eee;
+
+}
+
+.table-header h2{
+
+    color:var(--primary);
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+th{
+
+    padding:16px;
+    text-align:center;
+
+}
+
+td{
+
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr:hover{
+
+    background:#F8FCFF;
+
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.edit-btn{
+
+    background:#11B5D8;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#0A2A66;
+
+}
+
+.delete-btn{
+
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#b52a37;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.page-header{
+
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+
+}
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.full-width{
+
+    grid-column:1;
+
+}
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+}

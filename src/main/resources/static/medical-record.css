@@ -1,0 +1,300 @@
+body{
+
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#F5FCFE;
+
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:#0A2A66;
+    color:white;
+    box-shadow:0 6px 15px rgba(10,42,102,.12);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+}
+
+.logo h2{
+
+    margin:0;
+    color:white;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+
+}
+
+/* ================= PAGE TITLE ================= */
+
+.records{
+
+    width:90%;
+    margin:40px auto;
+
+}
+
+.section-title{
+
+    margin-bottom:30px;
+
+}
+
+.section-title h5{
+
+    color:#11B5D8;
+    letter-spacing:2px;
+    margin-bottom:8px;
+
+}
+
+.section-title h2{
+
+    color:#0A2A66;
+    margin:0;
+
+}
+
+.section-title p{
+
+    color:#666;
+    margin-top:10px;
+
+}
+
+/* ================= FORM ================= */
+
+.form-container{
+
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 8px 20px rgba(10,42,102,.08);
+    margin-bottom:40px;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+#visitDate{
+
+    grid-column:1 / span 2;
+    width:50%;
+    justify-self:center;
+
+}
+
+.form-container input{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #DCE5EF;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    box-sizing:border-box;
+
+}
+
+.form-container input:focus{
+
+    border-color:#11B5D8;
+
+}
+
+.form-container button{
+
+    grid-column:1 / span 2;
+
+    width:220px;
+
+    justify-self:center;
+
+    background:#11B5D8;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.form-container button:hover{
+
+    background:#0A2A66;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+.table-title{
+
+    color:#0A2A66;
+    margin-bottom:20px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(10,42,102,.08);
+
+}
+
+thead{
+
+    background:#0A2A66;
+    color:white;
+
+}
+
+th{
+
+    padding:16px;
+    font-size:15px;
+
+}
+
+td{
+
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #EAEAEA;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#F8FCFF;
+
+}
+
+tbody tr:hover{
+
+    background:#EEF9FC;
+
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+td button{
+
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    margin:3px;
+    transition:.3s;
+
+}
+
+td button:first-child{
+
+    background:#11B5D8;
+    color:white;
+
+}
+
+td button:first-child:hover{
+
+    background:#0A2A66;
+
+}
+
+td button:last-child{
+
+    background:#F44336;
+    color:white;
+
+}
+
+td button:last-child:hover{
+
+    background:#C62828;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.form-container{
+
+grid-template-columns:1fr;
+
+}
+
+.form-container button{
+
+grid-column:span 1;
+
+}
+
+table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+}
+
+@media(max-width:600px){
+
+nav{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+}
+
+}

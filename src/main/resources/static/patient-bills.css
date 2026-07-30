@@ -1,0 +1,277 @@
+body{
+
+    margin:0;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:#F4F8FB;
+
+    color:#333;
+
+}
+
+/* ---------- HEADER ---------- */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 45px;
+
+    background:#0A2A66;
+
+    color:white;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+}
+
+.logo h2{
+
+    margin:0;
+
+    font-size:28px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#AEE7F8;
+
+}
+
+/* ---------- TITLE ---------- */
+
+.section-title{
+
+    text-align:center;
+
+    margin:45px 0;
+
+}
+
+.section-title h5{
+
+    color:#11B5D8;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
+
+}
+
+.section-title h2{
+
+    color:#0A2A66;
+
+    font-size:34px;
+
+    margin:10px 0;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+}
+
+/* ---------- BILLS ---------- */
+
+.bills{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ---------- CARD ---------- */
+
+.bill-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.bill-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* LEFT */
+
+.bill-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.bill-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#E8F7FC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    color:#11B5D8;
+
+}
+
+.bill-details h3{
+
+    margin:0;
+
+    color:#0A2A66;
+
+}
+
+.bill-details p{
+
+    margin:6px 0;
+
+    color:#666;
+
+}
+
+/* RIGHT */
+
+.bill-right{
+
+    text-align:right;
+
+}
+
+.amount{
+
+    display:inline-block;
+
+    background:#11B5D8;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+.payment-status{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-weight:600;
+
+}
+
+.payment-status.paid{
+
+    color:#28a745;
+
+}
+
+.payment-status.pending{
+
+    color:#ff9800;
+
+}
+
+.payment-status.unpaid{
+
+    color:#dc3545;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+.bill-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.bill-right{
+
+    text-align:left;
+
+}
+
+}
