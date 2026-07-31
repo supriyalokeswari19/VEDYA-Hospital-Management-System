@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080";
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 async function getData(endpoint) {
 
     const response = await fetch(API_URL + endpoint);
