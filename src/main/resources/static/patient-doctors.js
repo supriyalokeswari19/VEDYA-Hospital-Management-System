@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080";
+const API_URL = "https://your-render-app.onrender.com";
 
 fetch(API_URL + "/doctors")
 

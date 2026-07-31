@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 
 const doctorId = params.get("id");
 
-fetch("http://localhost:8080/doctors/" + doctorId)
+fetch("${API_URL}/doctors/" + doctorId)
 
 .then(response => {
 

@@ -8,7 +8,7 @@ function login() {
     document.getElementById(
     "password").value;
 
-    fetch("http://localhost:8080/login", {
+    fetch("${API_URL}/login", {
 
         method:"POST",
 

@@ -1,5 +1,5 @@
 const API_URL =
-"http://localhost:8080/medical-records";
+"https://your-render-app.onrender.com/medical-records";
 
 window.onload = function () {
 

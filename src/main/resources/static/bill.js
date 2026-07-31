@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/bills";
+const API_URL = "https://your-render-app.onrender.com/bills";
 
 window.onload = function () {
 
