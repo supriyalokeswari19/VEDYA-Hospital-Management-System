@@ -1,8 +1,8 @@
 const USER_API =
-"http://localhost:8080/users";
+"https://vedya-hospital-management-system.onrender.com/users";
 
 const DOCTOR_API =
-"http://localhost:8080/doctors";
+"https://vedya-hospital-management-system.onrender.com/doctors";
 
 document.getElementById("doctorForm")
 

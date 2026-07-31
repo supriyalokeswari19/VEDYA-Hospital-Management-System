@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/appointments";
+const API_URL = "https://vedya-hospital-management-system.onrender.com/appointments";
 
 window.onload = function () {
 
@@ -111,7 +111,7 @@ function loadAppointments() {
 
 function loadPatients(){
 
-    fetch("http://localhost:8080/patients")
+    fetch("${API_URL}/patients")
 
     .then(response => response.json())
 
@@ -144,7 +144,7 @@ function loadPatients(){
 
 function loadDoctors(){
 
-    fetch("http://localhost:8080/doctors")
+    fetch("${API_URL}/doctors")
 
     .then(response => response.json())
 

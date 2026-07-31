@@ -1,5 +1,5 @@
 const API =
-"http://localhost:8080/users/pending";
+"https://vedya-hospital-management-system.onrender.com/users/pending";
 
 loadUsers();
 
@@ -66,7 +66,7 @@ function approve(id){
 
 fetch(
 
-"http://localhost:8080/users/approve/"+id,
+"${API_URL}/users/approve/"+id,
 
 {
 
@@ -88,7 +88,7 @@ function rejectUser(id){
 
 fetch(
 
-"http://localhost:8080/users/reject/"+id,
+"${API_URL}/users/reject/"+id,
 
 {
 

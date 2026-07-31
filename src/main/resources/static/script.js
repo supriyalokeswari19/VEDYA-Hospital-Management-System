@@ -1,4 +1,4 @@
-fetch("http://localhost:8080/dashboard")
+fetch("${API_URL}/dashboard")
 .then(response => response.json())
 .then(data => {
 
@@ -14,7 +14,7 @@ fetch("http://localhost:8080/dashboard")
 .catch(error => console.log(error));
 
 
-fetch("http://localhost:8080/appointments/report")
+fetch("${API_URL}/appointments/report")
 .then(response => response.json())
 .then(data => {
 

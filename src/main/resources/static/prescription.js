@@ -1,5 +1,5 @@
 const API_URL =
-"http://localhost:8080/prescriptions";
+"https://vedya-hospital-management-system.onrender.com/prescriptions";
 
 window.onload = function() {
     loadPrescriptions();
@@ -88,7 +88,7 @@ function savePrescription() {
     if(id===""){
 		console.log(API_URL);
 		console.log(JSON.stringify(prescription));
-        fetch("http://localhost:8080/prescriptions",{
+        fetch("${API_URL}/prescriptions",{
             method:"POST",
             headers:{
                 "Content-Type":

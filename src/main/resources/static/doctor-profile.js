@@ -23,7 +23,7 @@ function updateProfile() {
 
     };
 
-    fetch(`http://localhost:8080/doctors/${doctorId}`, {
+    fetch(`${API_URL}/doctors/${doctorId}`, {
 
         method: "PUT",
 
@@ -65,7 +65,7 @@ function updateProfile() {
 function loadProfile(){
 
     fetch(
-    `http://localhost:8080/doctors/user/${userId}`)
+    `${API_URL}/doctors/user/${userId}`)
 
     .then(res=>res.json())
 

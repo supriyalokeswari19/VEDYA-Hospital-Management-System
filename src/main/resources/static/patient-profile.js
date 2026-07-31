@@ -9,7 +9,7 @@ window.onload = function () {
 
 function loadProfile() {
 
-    fetch(`http://localhost:8080/patients/user/${userId}`)
+    fetch(`${API_URL}/patients/user/${userId}`)
 
     .then(response => response.json())
 
@@ -41,7 +41,7 @@ function updateProfile() {
         bloodGroup: document.getElementById("bloodGroup").value
     };
 
-    fetch(`http://localhost:8080/patients/${patientId}`, {
+    fetch(`${API_URL}/patients/${patientId}`, {
 
         method: "PUT",
 

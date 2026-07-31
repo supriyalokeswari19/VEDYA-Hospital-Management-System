@@ -9,7 +9,7 @@ window.onload = function () {
 
 function loadCounts() {
 
-    fetch("http://localhost:8080/doctors")
+    fetch("${API_URL}/doctors")
     .then(res => res.json())
     .then(data => {
 
@@ -18,7 +18,7 @@ function loadCounts() {
         data.length;
     });
 
-    fetch("http://localhost:8080/patients")
+    fetch("${API_URL}/patients")
     .then(res => res.json())
     .then(data => {
 
@@ -27,7 +27,7 @@ function loadCounts() {
         data.length;
     });
 
-    fetch("http://localhost:8080/appointments")
+    fetch("${API_URL}/appointments")
     .then(res => res.json())
     .then(data => {
 
@@ -36,7 +36,7 @@ function loadCounts() {
         data.length;
     });
 
-    fetch("http://localhost:8080/bills")
+    fetch("${API_URL}/bills")
     .then(res => res.json())
     .then(data => {
 
@@ -59,7 +59,7 @@ function loadCounts() {
 
 function loadAppointmentChart() {
 
-    fetch("http://localhost:8080/appointments/count")
+    fetch("${API_URL}/appointments/count")
 
     .then(res => res.json())
 
@@ -99,7 +99,7 @@ function loadAppointmentChart() {
 
 function loadRevenueChart() {
 
-    fetch("http://localhost:8080/appointments/revenue")
+    fetch("${API_URL}/appointments/revenue")
 
     .then(res => res.json())
 
