@@ -88,7 +88,7 @@ function rejectUser(id){
 
 fetch(
 
-"${API_URL}/users/reject/"+id,
+"`{API_URL}/users/reject/`+id,
 
 {
 

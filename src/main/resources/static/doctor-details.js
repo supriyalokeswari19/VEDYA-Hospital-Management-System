@@ -1,8 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 
 const doctorId = params.get("id");
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 
-fetch("${API_URL}/doctors/" + doctorId)
+fetch(`${API_URL}/doctors/` + doctorId)
 
 .then(response => {
 

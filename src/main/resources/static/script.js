@@ -1,4 +1,4 @@
-fetch("${API_URL}/dashboard")
+fetch(`${API_URL}/dashboard`)
 .then(response => response.json())
 .then(data => {
 
@@ -14,7 +14,7 @@ fetch("${API_URL}/dashboard")
 .catch(error => console.log(error));
 
 
-fetch("${API_URL}/appointments/report")
+fetch(`${API_URL}/appointments/report`)
 .then(response => response.json())
 .then(data => {
 

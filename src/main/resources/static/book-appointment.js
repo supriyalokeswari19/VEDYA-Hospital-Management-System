@@ -22,7 +22,7 @@ if(!doctorId){
 }
 
 
-fetch("${API_URL}/doctors/" + doctorId)
+fetch(`${API_URL}/doctors/` + doctorId)
 
 .then(response => response.json())
 
@@ -57,7 +57,7 @@ document
 	let userId =
 	localStorage.getItem("userId");
 
-	fetch("${API_URL}/patients/user/" + userId)
+	fetch(`${API_URL}/patients/user/` + userId)
 
 	.then(response => response.json())
 
@@ -84,7 +84,7 @@ document
 	    };
 
 	    return fetch(
-	        "${API_URL}/appointments",{
+	        `${API_URL}/appointments`,{
 
 	        method:"POST",
 

@@ -111,7 +111,7 @@ function loadAppointments() {
 
 function loadPatients(){
 
-    fetch("${API_URL}/patients")
+    fetch(`${API_URL}/patients`)
 
     .then(response => response.json())
 
@@ -144,7 +144,7 @@ function loadPatients(){
 
 function loadDoctors(){
 
-    fetch("${API_URL}/doctors")
+    fetch(`${API_URL}/doctors`)
 
     .then(response => response.json())
 

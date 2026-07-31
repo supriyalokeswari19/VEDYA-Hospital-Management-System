@@ -88,7 +88,7 @@ function savePrescription() {
     if(id===""){
 		console.log(API_URL);
 		console.log(JSON.stringify(prescription));
-        fetch("${API_URL}/prescriptions",{
+        fetch(`${API_URL}/prescriptions`,{
             method:"POST",
             headers:{
                 "Content-Type":
