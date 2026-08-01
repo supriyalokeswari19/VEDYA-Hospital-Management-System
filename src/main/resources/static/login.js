@@ -1,3 +1,4 @@
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 function login() {
 
     let email =
