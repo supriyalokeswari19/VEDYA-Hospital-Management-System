@@ -1,4 +1,4 @@
-const API_URL = "https://your-render-app.onrender.com/patients";
+const API_URL = "https://vedya-hospital-management-system.onrender.com/patients";
 
 window.onload = function () {
     loadPatients();

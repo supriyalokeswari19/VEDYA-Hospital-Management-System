@@ -1,3 +1,4 @@
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 const params =
 new URLSearchParams(window.location.search);
 

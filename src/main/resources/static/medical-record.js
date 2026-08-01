@@ -1,5 +1,5 @@
 const API_URL =
-"https://your-render-app.onrender.com/medical-records";
+"https://vedya-hospital-management-system.onrender.com/medical-records";
 
 window.onload = function () {
 

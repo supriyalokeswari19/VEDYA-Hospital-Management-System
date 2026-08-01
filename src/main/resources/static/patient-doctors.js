@@ -1,4 +1,4 @@
-const API_URL = "https://your-render-app.onrender.com";
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 
 fetch(API_URL + "/doctors")
 

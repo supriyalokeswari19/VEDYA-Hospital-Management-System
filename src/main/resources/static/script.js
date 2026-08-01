@@ -1,3 +1,4 @@
+const API_URL = "https://vedya-hospital-management-system.onrender.com";
 fetch(`${API_URL}/dashboard`)
 .then(response => response.json())
 .then(data => {
